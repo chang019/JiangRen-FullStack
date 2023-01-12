@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The input element</title>
+</head>
+<body>
+    <h1>The input element</h1>
+    <form method="post" action="xxx.php">
+        <input type="search" placeholder="search" />
+        <br /><br />
+        <input type="file" />
+        <br /><br />
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname" />
+        <br /><br />
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" />
+        <br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="gnedermale" value="gendermale" />
+        <label for="gnedermale">Male</label>
+        <input type="radio" name="gender" id="gnederfemale" value="genderfemale" />
+        <label for="gnederfemale">Female</label>
+        <input type="radio" name="gender" id="gnederother" value="genderother" />
+        <label for="gnederother">Other</label>
+        <br /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="4" />
+        <br /><br />
+        <label for="birthdate">Date of birth:</label>
+        <input type="date" id="birthdate" name="birthdate" max="2022-8-13" />
+        <br /><br />
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">I accept Terms and Conditions</label>
+        <br /><br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

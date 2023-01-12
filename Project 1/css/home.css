@@ -1,0 +1,52 @@
+.showreel {
+    width: 100%;
+    position: relative;
+}
+
+.showreel video {
+    width: 100%;
+}
+
+.showreel .brief {
+    position: absolute;
+    top: 15vw;
+    left: 15vw;
+    font-size: 32px;
+    color: #fff;
+    z-index: 1;
+}
+
+.showreel .brief #discover-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1vw 2vw;
+    font-size: 20px;
+    border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .showreel .brief {
+        top: 10vw;
+        left: 10vw;
+        font-size: 20px;
+    }
+    .showreel .brief #discover-btn {
+        font-size: 12px;
+    }
+}
+
+.intro {
+    width: 100%;
+    text-align: center;
+    padding: 4em;
+}
+
+.intro h3 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.intro p {
+    font-family: 'Roboto', sans-serif;
+}

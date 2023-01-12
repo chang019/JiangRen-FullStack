@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --main-color: #2eca7f;
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Open+Sans", sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+.background {
+    padding: 30px;
+    background-color: #eee;
+    height: 1000px;
+}
+
+.card {
+    max-width: 1000px;
+    min-width: 550px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card_header {
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.personal_brief {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    width: 75px;
+    margin-right: 15px;
+}
+
+/* .brief_description h3 {
+
+} */
+
+.social_media {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .social_media li {
+    background-color: #fff;
+    
+} */
+
+.social_media li i,
+.personal_intro button i {
+    background-color: #fff;
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .card_content {
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+} */
+
+.card_content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.card_content .nav_bar {
+    width: 200px;
+    padding: 25px;
+    border-right: 1px solid lightgray;
+    
+}
+
+.card_content .nav_bar li {
+    width: 100%;
+    color: #333;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.card_content .nav_bar li i {
+    margin-right: 10px;
+}
+
+.card_content .nav_bar .active {
+    color: var(--main-color);
+}
+
+.card_content .nav_bar li.active::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: -25px;
+    bottom: 28px;
+}
+
+.card_content .nav_bar li:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.card_content .picture {
+    width: 500px;
+    padding: 30px;
+}
+
+.card_content .picture img {
+    width: 100%;
+}
+
+.personal_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #333;
+    padding: 30px;
+}
+
+.personal_intro h3 {
+    width: 100%;
+}
+
+.personal_intro p {
+    margin: 10px 0;
+}
+
+.personal_intro .more_about_me_btn {
+    width: 100%;
+}
+
+.personal_intro button {
+    height: 100%;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    transition: all 0.2s;
+}
+
+.personal_intro button a {
+    color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+    .card_content .picture {
+        display: none;
+    }
+    .card_header,
+    .card_content {
+        font-size: 12px;
+    }
+
+}
