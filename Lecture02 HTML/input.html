@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="xxx.php">
+        Username:<input
+         type="text" 
+         name="username" 
+         placeholder="Please enter username" 
+         autocomplete="off"
+         required="on"
+        />
+        <br/>
+        Password:<input type="password" name="pwd"/>
+        <br/>
+        <!-- radio must have the same name. Otherwise, they can be checked both -->
+        Gender: Male <input type="radio" name="gender" value="male" />
+        Female <input type="radio" name="gender" value="female"/>
+        <br/>
+        Pronouns: <select name="pronouns" size="3">
+            <option value="he/him">He/Him</option>
+            <option value="she/her">She/Her</option>
+            <option value="they/them">They/Them</option>
+        </select>        
+        <br/>
+        Hobby: Smoking <input type="checkbox" name="hobby" value="smoking" />
+        Drinking <input type="checkbox" name="hobby" value="drinking" />
+        tt <input type="checkbox" name="hobby" value="tt" />
+        <br/>
+        Description: <textarea name="description" cols="20" rows="10"></textarea>
+        <br/>
+        <input type="reset" value="reset" />
+        <input type="submit" value="submit" />
+    </form>
+</body>
+</html>

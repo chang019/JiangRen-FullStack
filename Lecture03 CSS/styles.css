@@ -1,0 +1,114 @@
+@import url("https://fonts/googleapis.com/css?family=Roboto");
+
+h1 {
+    color: #4181ee;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.card {
+    max-width: 300px;
+    min-height: 250px;
+    background-color:aquamarine;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 30px;
+    border-radius: 3px;
+    margin: 20px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, 
+        rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
+
+.cardImageContainer img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card:nth-child(2) {
+    background-color: #4181ee;
+}
+
+.card:last-child {
+    background-color: #673ab7;
+}
+
+.cardContent {
+    width: 100%;
+}
+
+.cardTitle {
+    margin-bottom: 20px;
+}
+
+.cardInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardPrice {
+    background-color: #555;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* #flexbox_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+#flex_item1 {
+    background-color:aquamarine;
+    min-height: 300px;
+    padding: 30px;
+}
+
+#flex_item2 {
+    background-color: rgb(40, 122, 215);
+    min-height: 300px;
+    padding: 30px;
+}
+
+#flex_item3 {
+    background-color: aquamarine;
+    min-height: 300px;
+    padding: 30px;
+}
+
+#flex_item4 {
+    background-color: blueviolet;
+    min-height: 300px;
+    padding: 30px;
+}
+
+.coursetitle {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 14pt;
+    flex-wrap: wrap;
+} */
+
+/* html {
+    user-select: none;
+} */

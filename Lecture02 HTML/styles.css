@@ -1,0 +1,87 @@
+body {
+    color: #555;
+}
+
+form {
+    max-width: 580px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+input,
+select {
+    border-style: border-box;
+}
+
+.textinput,
+select {
+    background-color: #e8eeef;
+    border: none;
+    padding: 15px 10px;
+    width: 100%;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+}
+
+legend {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+legend::before {
+    content: '';
+    background-color: green;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+select {
+    appearance: none;
+    background-image: url(select.png);
+    background-repeat: no-repeat;
+    background-position: right 1em center;
+    background-size: 1em;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    font-size: 18px; 
+}
+
+@media screen and (max-width: 580px) {
+    form {
+        width: 300px;
+    }
+}
