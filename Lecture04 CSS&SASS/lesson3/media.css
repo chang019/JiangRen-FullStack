@@ -1,0 +1,51 @@
+/* @media screen and (min-width : 0px) {
+  body {
+    background: salmon;
+  }
+}
+
+@media screen and (min-width : 300px) {
+  body {
+    background: aqua;
+  }
+}
+
+@media screen and (min-width : 600px) {
+  body {
+    background: darkmagenta;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    background: yellow;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background: saddlebrown;
+  }
+} */
+
+
+
+
+
+
+
+
+/* 当页面宽度大于300px小于600px  background: aqua;*/
+
+/* 当页面宽度小于300px   background: salmon*/
+
+/* 当页面宽度大于960px小于1200px background: yellow*/
+
+/* 当页面宽度大于600px小于960px  background: darkmagenta;*/
+
+/**限定媒体类型：print 打印设备**/
+@media print {
+  body {
+    font-size: 10pt;
+  }
+}
