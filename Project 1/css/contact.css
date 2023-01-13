@@ -24,6 +24,8 @@
 .contact .contact-form .email input,
 .contact .contact-form .message textarea {
     width: 100%;
+    padding: .5em;
+    font-family: sans-serif;
 }
 
 .contact .contact-form .first-name,
