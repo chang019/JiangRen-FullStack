@@ -1,4 +1,7 @@
-.showreel {
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* .showreel {
     width: 100%;
     position: relative;
 }
@@ -34,19 +37,39 @@
     .showreel .brief #discover-btn {
         font-size: 12px;
     }
-}
+} */
 
 .intro {
-    width: 100%;
-    text-align: center;
-    padding: 4em;
+    padding: 0 4em 4em 4em;
 }
 
 .intro h3 {
     font-size: 3em;
-    margin-bottom: 1em;
+    margin: 1em;
+    text-align: center;
 }
 
 .intro p {
     font-family: 'Roboto', sans-serif;
+    color: #222D35D4;
+}
+
+.intro .quote {
+    font-style: italic;
+    margin: 2em 0;
+}
+
+.intro .inline-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.intro .inline-image img {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .intro .inline-image {
+        height: 50vh;
+    }
 }
