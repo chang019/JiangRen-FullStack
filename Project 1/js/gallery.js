@@ -9,7 +9,7 @@ overlays.forEach(overlay => {
     overlay.addEventListener('click', e => {
         lightbox.classList.add('active');
         const img = document.createElement('img');
-        const image = overlay.parentElement.parentElement.getElementsByTagName('img')[0];
+        const image = overlay.parentElement.parentElement.querySelector('img');
         img.src = image.src;
         while (lightbox.firstChild) {
             lightbox.removeChild(lightbox.firstChild);
@@ -22,6 +22,12 @@ lightbox.addEventListener('click', e => {
     if (e.target !== e.currentTarget) {
         return;
     } else {
+        lightbox.classList.remove('active');
+    }
+})
+
+document.addEventListener('keydown', e => {
+    if (e.which == 27) {
         lightbox.classList.remove('active');
     }
 })
